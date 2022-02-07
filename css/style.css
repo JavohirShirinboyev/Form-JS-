@@ -1,0 +1,79 @@
+/* default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0.5rem;
+    margin-top: 40px;
+}
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.container__area form input {
+    border: none;
+    border-bottom: 1px solid #909090;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    margin-top: 20px;
+}
+
+.container__text {
+    width: 100%;
+    border: 1px solid #909090;
+    border-top: none;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.btns {
+    display: flex;
+    margin: 30px 0;
+}
+
+.btns .btnSubmit,
+.btns .btnCancel {
+    padding: 0.5em;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;  
+}
+.btns .btnSubmit {
+    background-color: rgb(248, 70, 70);
+}
+
+.btns .btnCancel {
+    background-color: rgba(17, 218, 17, 0.829);
+    margin-left: 20px;
+}
+
+.container__text p {
+    font-size: 28px;
+    font-family: monospace;
+    margin-top: 40px;
+}
+
+.message {
+    font-size: 14px;
+    margin-top: 0.5rem;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim {
+    50% {
+        transform: translateX(250px);
+    }
+}
